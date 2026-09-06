@@ -1,107 +1,210 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carver Essential Tee - Carver Streetwear</title>
 
-```
-<style>
-    img {
-        width: 400px;
-        height: 480px;
-        object-fit: cover;
-    }
+    <style>
+        img {
+            width: 400px;
+            height: 480px;
+            object-fit: cover;
+        }
 
-    table {
-        border-collapse: collapse;
-    }
+        table {
+            border-collapse: collapse;
+        }
 
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-    }
-</style>
-```
-
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
 </head>
 
 <body>
 
-```
-<header>
-    <h1>Carver Streetwear</h1>
+    <header>
+        <h1>Carver Streetwear</h1>
 
-    <p>Streetwear made for those who wear their identity.</p>
+        <p>Streetwear made for those who wear their identity.</p>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <section>
-        <h1>Carver Essential Tee</h1>
+    <main>
 
-        <img src="../tee.jpg" alt="Carver Essential Tee">
+        <section>
+            <h1>Carver Essential Tee</h1>
 
-        <h2>Product Description</h2>
+            <img src="../tee.jpg" alt="Carver Essential Tee">
 
-        <p>
-            The Carver Essential Tee is a clean and versatile streetwear
-            t-shirt designed for everyday wear. Its simple design makes it
-            easy to pair with different outfits while keeping a comfortable
-            and effortless streetwear look.
-        </p>
+            <h2>Product Description</h2>
 
-        <p>
-            Made for people who value both comfort and personal style,
-            the Carver Essential Tee is suitable for casual days, hangouts,
-            and everyday streetwear outfits.
-        </p>
-    </section>
+            <p>
+                The Carver Essential Tee is a clean and versatile streetwear
+                t-shirt designed for everyday wear. Its simple design makes it
+                easy to pair with different outfits while keeping a comfortable
+                and effortless streetwear look.
+            </p>
 
-    <section>
-        <h2>Specifications</h2>
+            <p>
+                Made for people who value both comfort and personal style,
+                the Carver Essential Tee is suitable for casual days, hangouts,
+                and everyday streetwear outfits.
+            </p>
+        </section>
 
-        <table>
-            <tr>
-                <th>Specification</th>
-                <th>Details</th>
-            </tr>
+        <section>
+            <h2>Specifications</h2>
 
-            <tr>
-                <td>Material</td>
-                <td>Cotton</td>
-            </tr>
+            <table>
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
 
-            <tr>
-                <td>Size</td>
-                <td>Small, Medium, Large</td>
-            </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>Cotton</td>
+                </tr>
 
-            <tr>
-                <td>Colour</td>
-                <td>Black</td>
-            </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>Small, Medium, Large</td>
+                </tr>
 
-            <tr>
-                <td>Price</td>
-                <td>₱799</td>
-            </tr>
-        </table>
-    </section>
-</main>
+                <tr>
+                    <td>Colour</td>
+                    <td>Black</td>
+                </tr>
 
-<footer>
-    <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
-</footer>
-```
+                <tr>
+                    <td>Price</td>
+                    <td>₱799</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Module 4.3: Order Enquiry Form -->
+        <section>
+            <h2>Order Enquiry</h2>
+
+            <p>
+                Interested in ordering the Carver Essential Tee?
+                Fill out the form below to send us an order enquiry.
+            </p>
+
+            <form>
+
+                <p>
+                    <label for="quantity">Quantity</label><br>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        max="20"
+                        required
+                    >
+                </p>
+
+                <fieldset>
+                    <legend>Delivery method</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="delivery-standard"
+                            name="delivery"
+                            value="standard"
+                            required
+                        >
+                        <label for="delivery-standard">Standard delivery</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="delivery-express"
+                            name="delivery"
+                            value="express"
+                        >
+                        <label for="delivery-express">Express delivery</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="delivery-pickup"
+                            name="delivery"
+                            value="pickup"
+                        >
+                        <label for="delivery-pickup">Store pickup</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Optional extras</legend>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="gift-wrap"
+                            name="extras"
+                            value="gift-wrapping"
+                        >
+                        <label for="gift-wrap">Gift wrapping</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="thank-you-card"
+                            name="extras"
+                            value="thank-you-card"
+                        >
+                        <label for="thank-you-card">Thank-you card</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="express-handling"
+                            name="extras"
+                            value="express-handling"
+                        >
+                        <label for="express-handling">Express handling</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="contact-email">Contact email</label><br>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="contact-email"
+                        required
+                    >
+                </p>
+
+                <button type="submit">Send order enquiry</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
