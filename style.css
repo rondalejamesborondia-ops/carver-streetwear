@@ -1,0 +1,104 @@
+/* ========================================
+   1. VARIABLES
+   ======================================== */
+
+:root {
+    --brand-color: #111111;
+    --dark-ink: #222222;
+    --muted-grey: #666666;
+    --light-background: #f5f5f5;
+    --white: #ffffff;
+}
+
+
+/* ========================================
+   2. BASE STYLES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-ink);
+    background-color: var(--light-background);
+    margin: 0;
+}
+
+
+/* ========================================
+   3. LAYOUT REGIONS
+   ======================================== */
+
+header {
+    background-color: var(--brand-color);
+    color: var(--white);
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+footer {
+    background-color: var(--brand-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* ========================================
+   4. COMPONENTS — PRODUCT CARDS
+   ======================================== */
+
+article {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--muted-grey);
+}
+
+article h2,
+article h3 {
+    color: var(--brand-color);
+}
+
+article p {
+    color: var(--muted-grey);
+}
+
+
+/* ========================================
+   5. IMAGES
+   ======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

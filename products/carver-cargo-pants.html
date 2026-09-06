@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carver Cargo Pants - Carver Streetwear</title>
+
+    <style>
+        img {
+            width: 400px;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Carver Streetwear</h1>
+
+        <p>Streetwear made for those who wear their identity.</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Carver Cargo Pants</h1>
+
+            <img src="../pants.jpg" alt="Carver Cargo Pants">
+
+            <h2>Product Description</h2>
+
+            <p>
+                The Carver Cargo Pants are designed for everyday streetwear,
+                combining comfort, functionality, and a relaxed style. Their
+                versatile design makes them easy to pair with different tops
+                and streetwear outfits.
+            </p>
+
+            <p>
+                Made for those who value both practicality and personal style,
+                the Carver Cargo Pants are suitable for casual days, hangouts,
+                and everyday wear.
+            </p>
+        </section>
+
+        <section>
+            <h2>Specifications</h2>
+
+            <table>
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
+
+                <tr>
+                    <td>Material</td>
+                    <td>Cotton Twill</td>
+                </tr>
+
+                <tr>
+                    <td>Size</td>
+                    <td>Small, Medium, Large</td>
+                </tr>
+
+                <tr>
+                    <td>Colour</td>
+                    <td>Black</td>
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>₱1,199</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Order Enquiry Form -->
+        <section>
+            <h2>Order Enquiry</h2>
+
+            <p>
+                Interested in ordering the Carver Cargo Pants?
+                Fill out the form below to send us an order enquiry.
+            </p>
+
+            <form>
+
+                <p>
+                    <label for="quantity">Quantity</label><br>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        max="20"
+                        required
+                    >
+                </p>
+
+                <fieldset>
+                    <legend>Delivery method</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="delivery-standard"
+                            name="delivery"
+                            value="standard"
+                            required
+                        >
+                        <label for="delivery-standard">
+                            Standard delivery
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="delivery-express"
+                            name="delivery"
+                            value="express"
+                        >
+                        <label for="delivery-express">
+                            Express delivery
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="delivery-pickup"
+                            name="delivery"
+                            value="pickup"
+                        >
+                        <label for="delivery-pickup">
+                            Store pickup
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Optional extras</legend>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="gift-wrap"
+                            name="extras"
+                            value="gift-wrapping"
+                        >
+                        <label for="gift-wrap">
+                            Gift wrapping
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="thank-you-card"
+                            name="extras"
+                            value="thank-you-card"
+                        >
+                        <label for="thank-you-card">
+                            Thank-you card
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="express-handling"
+                            name="extras"
+                            value="express-handling"
+                        >
+                        <label for="express-handling">
+                            Express handling
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="contact-email">Contact email</label><br>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="contact-email"
+                        required
+                    >
+                </p>
+
+                <button type="submit">Send order enquiry</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
