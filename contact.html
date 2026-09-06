@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,40 +8,71 @@
 </head>
 <body>
 
-    <header>
-        <h1>Carver Streetwear</h1>
+```
+<header>
+    <h1>Carver Streetwear</h1>
 
-        <p>Streetwear made for those who wear their identity.</p>
+    <p>Streetwear made for those who wear their identity.</p>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section>
-            <h2>Contact Us</h2>
+<main>
+    <section>
+        <h2>Contact Us</h2>
 
-            <p>
-                Have a question about our products? Feel free to reach out to us
-                through any of the methods below.
-            </p>
+        <p>
+            Have a question about our products? Feel free to send us a message
+            using the form below.
+        </p>
 
-            <ul>
-                <li>Email: carverstreetwear@gmail.com</li>
-                <li>Facebook: Carver Streetwear</li>
-                <li>Instagram: @carverstreetwear</li>
-            </ul>
-        </section>
-    </main>
+        <form>
+            <fieldset>
+                <legend>Your details</legend>
 
-    <footer>
-        <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
-    </footer>
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="subject">Subject</label><br>
+                    <select id="subject" name="subject">
+                        <option value="product-question">Product question</option>
+                        <option value="order-status">Order status</option>
+                        <option value="size-help">Size help</option>
+                        <option value="wholesale">Wholesale enquiry</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </p>
+
+                <button type="submit">Send message</button>
+
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
+</footer>
+```
 
 </body>
 </html>
