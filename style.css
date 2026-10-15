@@ -1,3 +1,4 @@
+
 /* ========================================
    1. VARIABLES
    ======================================== */
@@ -8,6 +9,8 @@
     --muted-grey: #666666;
     --light-background: #f5f5f5;
     --white: #ffffff;
+    --card-background: #ffffff;
+    --border-color: #777777;
 }
 
 
@@ -73,14 +76,14 @@ footer {
 
 
 /* ========================================
-   4. COMPONENTS — PRODUCT CARDS
+   4. PRODUCT CARDS
    ======================================== */
 
 article {
-    background-color: var(--white);
+    background-color: var(--card-background);
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid var(--muted-grey);
+    border: 1px solid var(--border-color);
 }
 
 article h2,
@@ -89,7 +92,29 @@ article h3 {
 }
 
 article p {
-    color: var(--muted-grey);
+    color: var(--dark-ink);
+}
+
+/* Reusable product card class */
+
+.product-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 16px;
+    border-left: 5px solid var(--brand-color);
+    margin-bottom: 24px;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    color: var(--brand-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: var(--dark-ink);
+    line-height: 1.6;
 }
 
 
@@ -101,4 +126,75 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+
+/* ========================================
+   6. CONTACT FORM
+   ======================================== */
+
+fieldset {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: var(--brand-color);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Form fields */
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font: inherit;
+    color: var(--dark-ink);
+    background-color: var(--white);
+}
+
+input,
+select {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Visible keyboard focus */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
+
+/* Submit button */
+
+button[type="submit"] {
+    background-color: var(--brand-color);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.85;
 }
