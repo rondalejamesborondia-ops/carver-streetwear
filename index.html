@@ -4,30 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./style.css">
-
-    <title>Carver Streetwear</title>
-
-    <style>
-        img {
-            width: 250px;
-            height: 300px;
-            object-fit: cover;
-        }
-    </style>
+    <meta name="description" content="Discover Carver Streetwear: everyday streetwear made for those who wear their identity.">
+    <title>Carver Streetwear | Wear Your Identity</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Carver Streetwear</h1>
+    <div class="announcement-bar">
+        STREETWEAR MADE FOR THOSE WHO WEAR THEIR IDENTITY.
+    </div>
 
-        <p>Streetwear made for those who wear their identity.</p>
-
-        <nav>
+    <header class="site-header">
+        <div class="site-branding">
+            <a class="logo" href="index.html">CARVER<span>.</span></a>
+            <p>Streetwear for the individual.</p>
+        </div>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -35,76 +29,238 @@
     </header>
 
     <main>
-
-        <section>
-            <h2>Rondale James Borondia</h2>
-
-            <p>
-                I'm Rondale James Borondia, a student and fashion enthusiast
-                who enjoys exploring streetwear, personal style, and creative design.
-            </p>
-
-            <img src="fashfash.jpg" alt="Photo of Rondale James Borondia">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">CARVER STREETWEAR / EST. 2026</p>
+                <h1>WEAR YOUR<br><span>IDENTITY.</span></h1>
+                <p class="hero-description">
+                    More than what you wear. A reflection of who you are.
+                    Find your everyday uniform with Carver Streetwear.
+                </p>
+                <a class="button button-light" href="#products">EXPLORE THE COLLECTION ↗</a>
+            </div>
+            <div class="hero-image">
+                <img src="fashfash.jpg" alt="Carver Streetwear brand portrait">
+                <span class="image-label">THE CARVER POINT OF VIEW — 001</span>
+            </div>
         </section>
 
-        <section>
-            <h2>Our Products</h2>
-
-            <article class="product-card">
-                <h3>Carver Essential Tee</h3>
-
-                <p>₱799</p>
-
-                <p>
-                    A clean and versatile streetwear t-shirt designed for everyday wear.
-                </p>
-
-                <img src="tee.jpg" alt="Carver Essential Tee">
-
-                <p>
-                    <a href="products/carver-essential-tee.html">View details</a>
-                </p>
-            </article>
-
-            <article class="product-card">
-                <h3>Carver Street Hoodie</h3>
-
-                <p>₱1,499</p>
-
-                <p>
-                    A relaxed cropped hoodie made for a comfortable and effortless streetwear look.
-                </p>
-
-                <img src="hoodie.jpg" alt="Carver Street Hoodie">
-
-                <p>
-                    <a href="products/carver-street-hoodie.html">View details</a>
-                </p>
-            </article>
-
-            <article class="product-card">
-                <h3>Carver Cargo Pants</h3>
-
-                <p>₱1,299</p>
-
-                <p>
-                    Utility-inspired cargo pants that combine functionality with modern streetwear style.
-                </p>
-
-                <img src="pants.jpg" alt="Carver Cargo Pants">
-
-                <p>
-                    <a href="products/carver-cargo-pants.html">View details</a>
-                </p>
-            </article>
-
+        <section class="intro-strip">
+            <p>INDIVIDUALITY FIRST.</p>
+            <p>BUILT FOR EVERYDAY.</p>
+            <p>MADE TO BE YOURS.</p>
         </section>
 
+        <section class="section-block" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE CARVER SELECTION</p>
+                    <h2>SHOP THE COLLECTION</h2>
+                </div>
+                <p class="section-note">Everyday essentials. Your own statement.</p>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <a class="product-image" href="products/carver-essential-tee.html">
+                        <img src="tee.jpg" alt="Carver Essential Tee">
+                        <span class="product-number">01 / ESSENTIALS</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>Carver Essential Tee</h3>
+                            <p>Everyday essential / Relaxed style</p>
+                        </div>
+                        <span class="price">₱799</span>
+                    </div>
+                    <a class="text-link" href="products/carver-essential-tee.html">VIEW PRODUCT ↗</a>
+                </article>
+
+                <article class="product-card">
+                    <a class="product-image" href="products/carver-street-hoodie.html">
+                        <img src="hoodie.jpg" alt="Carver Street Hoodie">
+                        <span class="product-number">02 / LAYERS</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>Carver Street Hoodie</h3>
+                            <p>Street essential / Everyday layer</p>
+                        </div>
+                        <span class="price">₱1,499</span>
+                    </div>
+                    <a class="text-link" href="products/carver-street-hoodie.html">VIEW PRODUCT ↗</a>
+                </article>
+
+                <article class="product-card">
+                    <a class="product-image" href="products/carver-cargo-pants.html">
+                        <img src="pants.jpg" alt="Carver Cargo Pants">
+                        <span class="product-number">03 / BOTTOMS</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>Carver Cargo Pants</h3>
+                            <p>Utility inspired / Daily wear</p>
+                        </div>
+                        <span class="price">₱1,299</span>
+                    </div>
+                    <a class="text-link" href="products/carver-cargo-pants.html">VIEW PRODUCT ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="statement-section">
+            <p class="eyebrow">NOT HERE TO FIT IN.</p>
+            <h2>YOUR STYLE.<br>YOUR RULES.</h2>
+            <p>Wear what feels like you. Nothing more, nothing less.</p>
+            <a class="button button-dark" href="about.html">GET TO KNOW CARVER ↗</a>
+        </section>
+
+        <section class="category-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIND YOUR FIT</p>
+                    <h2>THE EVERYDAY ROTATION</h2>
+                </div>
+            </div>
+            <div class="category-grid">
+                <a class="category-tile" href="products/carver-essential-tee.html">
+                    <span>01</span>
+                    <h3>TEES</h3>
+                    <p>THE EVERYDAY STANDARD ↗</p>
+                </a>
+                <a class="category-tile" href="products/carver-street-hoodie.html">
+                    <span>02</span>
+                    <h3>HOODIES</h3>
+                    <p>BUILT FOR LAYERS ↗</p>
+                </a>
+                <a class="category-tile" href="products/carver-cargo-pants.html">
+                    <span>03</span>
+                    <h3>BOTTOMS</h3>
+                    <p>FUNCTION MEETS STYLE ↗</p>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
+    <footer class="site-footer">
+        <a class="footer-logo" href="index.html">CARVER<span>.</span></a>
+        <p>Streetwear made for those who wear their identity.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#privacy-policy" class="open-privacy">Privacy Policy</a>
+        </div>
+        <p class="copyright">&copy; 2026 Carver Streetwear. All rights reserved.</p>
     </footer>
 
+    <!-- Privacy Policy Popup -->
+    <div class="privacy-overlay" id="privacy-overlay" role="dialog"
+         aria-modal="true" aria-labelledby="privacy-title" hidden>
+        <div class="privacy-modal">
+            <p class="eyebrow">YOUR PRIVACY MATTERS</p>
+            <h2 id="privacy-title">PRIVACY POLICY</h2>
+            <p class="privacy-updated">Last updated: October 2026</p>
+
+            <div class="privacy-content">
+                <h3>About this website</h3>
+                <p>
+                    Carver Streetwear is an educational website project that
+                    showcases clothing products and brand information.
+                </p>
+
+                <h3>Information you provide</h3>
+                <p>
+                    The contact form is a demonstration. Unless a working
+                    submission service is connected, messages are not sent
+                    to or stored by Carver Streetwear through this form.
+                </p>
+
+                <h3>Cookies and browser storage</h3>
+                <p>
+                    This website uses your browser's local storage to remember
+                    your privacy popup choice. This demo does not intentionally
+                    use advertising cookies or analytics.
+                </p>
+
+                <h3>Third-party services</h3>
+                <p>
+                    Your browser may load images or other resources included
+                    in this website. Those services may have their own privacy
+                    policies.
+                </p>
+
+                <h3>Contact</h3>
+                <p>
+                    For questions about this demo, visit our Contact page.
+                    This policy should be updated if the website begins
+                    collecting personal information or processing real orders.
+                </p>
+            </div>
+
+            <button class="button button-dark privacy-accept" id="privacy-accept">
+                ACCEPT &amp; CONTINUE
+            </button>
+            <button class="privacy-close" id="privacy-close" type="button">
+                Continue without saving a choice
+            </button>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            const overlay = document.getElementById("privacy-overlay");
+            const acceptButton = document.getElementById("privacy-accept");
+            const closeButton = document.getElementById("privacy-close");
+            const privacyLinks = document.querySelectorAll(".open-privacy");
+            const storageKey = "carverPrivacyAccepted";
+
+            function openPrivacy() {
+                overlay.hidden = false;
+                acceptButton.focus();
+            }
+
+            function closePrivacy() {
+                overlay.hidden = true;
+            }
+
+            try {
+                if (localStorage.getItem(storageKey) !== "yes") {
+                    openPrivacy();
+                }
+            } catch (error) {
+                openPrivacy();
+            }
+
+            acceptButton.addEventListener("click", () => {
+                try {
+                    localStorage.setItem(storageKey, "yes");
+                } catch (error) {
+                    // The popup can still close if storage is unavailable.
+                }
+                closePrivacy();
+            });
+
+            closeButton.addEventListener("click", closePrivacy);
+
+            privacyLinks.forEach(link => {
+                link.addEventListener("click", event => {
+                    event.preventDefault();
+                    openPrivacy();
+                });
+            });
+
+            overlay.addEventListener("click", event => {
+                if (event.target === overlay) {
+                    closePrivacy();
+                }
+            });
+
+            document.addEventListener("keydown", event => {
+                if (event.key === "Escape" && !overlay.hidden) {
+                    closePrivacy();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -1,71 +1,188 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Discover the philosophy behind Carver Streetwear.">
+    <title>About Us | Carver Streetwear</title>
     <link rel="stylesheet" href="style.css">
-    
-    <title>About - Carver Streetwear</title>
-
-    <style>
-        img {
-            width: 250px;
-            height: 300px;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Carver Streetwear</h1>
+    <div class="announcement-bar">
+        STREETWEAR MADE FOR THOSE WHO WEAR THEIR IDENTITY.
+    </div>
 
-        <p>Streetwear made for those who wear their identity.</p>
-
-        <nav>
+    <header class="site-header">
+        <div class="site-branding">
+            <a class="logo" href="index.html">CARVER<span>.</span></a>
+            <p>Streetwear for the individual.</p>
+        </div>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>About Carver Streetwear</h2>
-
+        <section class="about-hero">
+            <p class="eyebrow">THE STORY BEHIND THE LABEL</p>
+            <h1>MORE THAN<br><span>STREETWEAR.</span></h1>
             <p>
-                Carver Streetwear is a clothing brand inspired by individuality,
-                creativity, and modern streetwear culture. We believe that
-                fashion is one way people can express who they are.
-            </p>
-
-            <p>
-                The shop was created to provide comfortable and stylish streetwear
-                pieces for people who want to express their identity through
-                their personal style.
+                Clothing is what you wear. Identity is what you bring to it.
+                Carver is built around the idea that your style should speak
+                for you, without needing to explain yourself.
             </p>
         </section>
 
-        <section>
-            <h2>About the Owner</h2>
+        <section class="about-feature">
+            <div class="about-image">
+                <img src="fashfash.jpg" alt="Carver Streetwear visual identity">
+            </div>
+            <div class="about-copy">
+                <p class="eyebrow">01 / OUR POINT OF VIEW</p>
+                <h2>OWN YOUR<br>IDENTITY.</h2>
+                <p>
+                    Carver Streetwear is an independent streetwear concept
+                    focused on everyday pieces and personal expression.
+                    Our approach is simple: create a look that feels natural,
+                    versatile, and true to the person wearing it.
+                </p>
+                <p>
+                    We believe style is not about dressing like everyone else.
+                    It is about finding what feels right for you and wearing
+                    it with confidence.
+                </p>
+            </div>
+        </section>
 
-            <h3>Rondale James Borondia</h3>
+        <section class="values-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">WHAT WE STAND FOR</p>
+                    <h2>THE CARVER CODE</h2>
+                </div>
+            </div>
 
-            <p>
-                I'm Rondale James Borondia, a student and fashion enthusiast
-                who enjoys exploring streetwear, personal style, and creative design.
-            </p>
+            <div class="values-grid">
+                <article class="value-card">
+                    <span>01</span>
+                    <h3>INDIVIDUALITY</h3>
+                    <p>
+                        Your identity is your own. Wear pieces that express
+                        who you are, not who you are expected to be.
+                    </p>
+                </article>
+                <article class="value-card">
+                    <span>02</span>
+                    <h3>SIMPLICITY</h3>
+                    <p>
+                        Strong style does not need to be complicated.
+                        Keep it versatile, considered, and easy to wear.
+                    </p>
+                </article>
+                <article class="value-card">
+                    <span>03</span>
+                    <h3>CONFIDENCE</h3>
+                    <p>
+                        The best outfit is the one you feel yourself in.
+                        Wear it with intention and make it your own.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-            <img src="./fashfash.jpg" alt="Photo of Rondale James Borondia">
+        <section class="about-cta">
+            <p class="eyebrow">YOUR NEXT EVERYDAY ESSENTIAL</p>
+            <h2>MAKE IT<br>YOUR OWN.</h2>
+            <a class="button button-light" href="index.html#products">
+                EXPLORE OUR PRODUCTS ↗
+            </a>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
+    <footer class="site-footer">
+        <a class="footer-logo" href="index.html">CARVER<span>.</span></a>
+        <p>Streetwear made for those who wear their identity.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#privacy-policy" class="open-privacy">Privacy Policy</a>
+        </div>
+        <p class="copyright">&copy; 2026 Carver Streetwear. All rights reserved.</p>
     </footer>
 
+    <div class="privacy-overlay" id="privacy-overlay" role="dialog"
+         aria-modal="true" aria-labelledby="privacy-title" hidden>
+        <div class="privacy-modal">
+            <p class="eyebrow">YOUR PRIVACY MATTERS</p>
+            <h2 id="privacy-title">PRIVACY POLICY</h2>
+            <p class="privacy-updated">Last updated: October 2026</p>
+            <div class="privacy-content">
+                <h3>About this website</h3>
+                <p>Carver Streetwear is an educational website project that showcases clothing products and brand information.</p>
+                <h3>Information you provide</h3>
+                <p>The contact form is a demonstration. Unless a working submission service is connected, messages are not sent to or stored by Carver Streetwear through this form.</p>
+                <h3>Cookies and browser storage</h3>
+                <p>This website uses your browser's local storage to remember your privacy popup choice. This demo does not intentionally use advertising cookies or analytics.</p>
+                <h3>Third-party services</h3>
+                <p>Your browser may load resources included in this website. Those services may have their own privacy policies.</p>
+                <h3>Contact</h3>
+                <p>For questions about this demo, visit our Contact page. This policy should be updated if the website begins collecting personal information or processing real orders.</p>
+            </div>
+            <button class="button button-dark privacy-accept" id="privacy-accept">ACCEPT &amp; CONTINUE</button>
+            <button class="privacy-close" id="privacy-close" type="button">Continue without saving a choice</button>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            const overlay = document.getElementById("privacy-overlay");
+            const acceptButton = document.getElementById("privacy-accept");
+            const closeButton = document.getElementById("privacy-close");
+            const storageKey = "carverPrivacyAccepted";
+
+            function openPrivacy() {
+                overlay.hidden = false;
+                acceptButton.focus();
+            }
+
+            function closePrivacy() {
+                overlay.hidden = true;
+            }
+
+            try {
+                if (localStorage.getItem(storageKey) !== "yes") openPrivacy();
+            } catch (error) {
+                openPrivacy();
+            }
+
+            acceptButton.addEventListener("click", () => {
+                try { localStorage.setItem(storageKey, "yes"); } catch (error) {}
+                closePrivacy();
+            });
+
+            closeButton.addEventListener("click", closePrivacy);
+
+            document.querySelectorAll(".open-privacy").forEach(link => {
+                link.addEventListener("click", event => {
+                    event.preventDefault();
+                    openPrivacy();
+                });
+            });
+
+            overlay.addEventListener("click", event => {
+                if (event.target === overlay) closePrivacy();
+            });
+
+            document.addEventListener("keydown", event => {
+                if (event.key === "Escape" && !overlay.hidden) closePrivacy();
+            });
+        })();
+    </script>
 </body>
 </html>

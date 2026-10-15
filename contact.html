@@ -1,80 +1,177 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Contact Carver Streetwear with questions about our products.">
+    <title>Contact | Carver Streetwear</title>
     <link rel="stylesheet" href="style.css">
-    
-    <title>Contact - Carver Streetwear</title>
 </head>
 <body>
 
-    <header>
-    <h1>Carver Streetwear</h1>
+    <div class="announcement-bar">
+        STREETWEAR MADE FOR THOSE WHO WEAR THEIR IDENTITY.
+    </div>
 
-    <p>Streetwear made for those who wear their identity.</p>
+    <header class="site-header">
+        <div class="site-branding">
+            <a class="logo" href="index.html">CARVER<span>.</span></a>
+            <p>Streetwear for the individual.</p>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <section class="contact-hero">
+            <p class="eyebrow">WE'RE HERE TO HELP</p>
+            <h1>LET'S<br><span>TALK.</span></h1>
+            <p>
+                Have a question about a product or need help choosing your fit?
+                Send us a message using the form below.
+            </p>
+        </section>
 
-<main>
-    <section>
-        <h2>Contact Us</h2>
-
-        <p>
-            Have a question about our products? Feel free to send us a message
-            using the form below.
-        </p>
-
-        <form>
-            <fieldset>
-                <legend>Your details</legend>
-
+        <section class="contact-layout">
+            <div class="contact-info">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>YOUR QUESTION.<br>OUR NEXT STEP.</h2>
                 <p>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" required>
+                    Use the form to tell us what you need. This educational
+                    website currently demonstrates the contact form layout
+                    and does not send messages automatically.
                 </p>
+                <div class="contact-note">
+                    <span>CARVER STREETWEAR</span>
+                    <p>Streetwear made for those who wear their identity.</p>
+                </div>
+            </div>
 
-                <p>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
+            <form class="contact-form" action="#" method="get">
+                <fieldset>
+                    <legend>YOUR DETAILS</legend>
 
-                <p>
-                    <label for="subject">Subject</label><br>
-                    <select id="subject" name="subject">
-                        <option value="product-question">Product question</option>
-                        <option value="order-status">Order status</option>
-                        <option value="size-help">Size help</option>
-                        <option value="wholesale">Wholesale enquiry</option>
-                        <option value="other">Something else</option>
-                    </select>
-                </p>
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Your name" autocomplete="name" required>
+                    </div>
 
-                <p>
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </p>
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="you@example.com" autocomplete="email" required>
+                    </div>
 
-                <button type="submit">Send message</button>
+                    <div class="form-field">
+                        <label for="subject">What can we help with?</label>
+                        <select id="subject" name="subject">
+                            <option value="product-question">Product question</option>
+                            <option value="order-status">Order status</option>
+                            <option value="size-help">Size help</option>
+                            <option value="wholesale">Wholesale enquiry</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
 
-            </fieldset>
-        </form>
-    </section>
-</main>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                                  placeholder="Write your message here..." required></textarea>
+                    </div>
 
-<footer>
-    <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
-</footer>
-```
+                    <button class="button button-dark submit-button" type="submit">
+                        SEND MESSAGE ↗
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <a class="footer-logo" href="index.html">CARVER<span>.</span></a>
+        <p>Streetwear made for those who wear their identity.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#privacy-policy" class="open-privacy">Privacy Policy</a>
+        </div>
+        <p class="copyright">&copy; 2026 Carver Streetwear. All rights reserved.</p>
+    </footer>
+
+    <div class="privacy-overlay" id="privacy-overlay" role="dialog"
+         aria-modal="true" aria-labelledby="privacy-title" hidden>
+        <div class="privacy-modal">
+            <p class="eyebrow">YOUR PRIVACY MATTERS</p>
+            <h2 id="privacy-title">PRIVACY POLICY</h2>
+            <p class="privacy-updated">Last updated: October 2026</p>
+            <div class="privacy-content">
+                <h3>About this website</h3>
+                <p>Carver Streetwear is an educational website project that showcases clothing products and brand information.</p>
+                <h3>Information you provide</h3>
+                <p>The contact form is a demonstration. Unless a working submission service is connected, messages are not sent to or stored by Carver Streetwear through this form.</p>
+                <h3>Cookies and browser storage</h3>
+                <p>This website uses your browser's local storage to remember your privacy popup choice. This demo does not intentionally use advertising cookies or analytics.</p>
+                <h3>Third-party services</h3>
+                <p>Your browser may load resources included in this website. Those services may have their own privacy policies.</p>
+                <h3>Contact</h3>
+                <p>For questions about this demo, visit our Contact page. This policy should be updated if the website begins collecting personal information or processing real orders.</p>
+            </div>
+            <button class="button button-dark privacy-accept" id="privacy-accept">ACCEPT &amp; CONTINUE</button>
+            <button class="privacy-close" id="privacy-close" type="button">Continue without saving a choice</button>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            const overlay = document.getElementById("privacy-overlay");
+            const acceptButton = document.getElementById("privacy-accept");
+            const closeButton = document.getElementById("privacy-close");
+            const storageKey = "carverPrivacyAccepted";
+
+            function openPrivacy() {
+                overlay.hidden = false;
+                acceptButton.focus();
+            }
+
+            function closePrivacy() {
+                overlay.hidden = true;
+            }
+
+            try {
+                if (localStorage.getItem(storageKey) !== "yes") openPrivacy();
+            } catch (error) {
+                openPrivacy();
+            }
+
+            acceptButton.addEventListener("click", () => {
+                try { localStorage.setItem(storageKey, "yes"); } catch (error) {}
+                closePrivacy();
+            });
+
+            closeButton.addEventListener("click", closePrivacy);
+
+            document.querySelectorAll(".open-privacy").forEach(link => {
+                link.addEventListener("click", event => {
+                    event.preventDefault();
+                    openPrivacy();
+                });
+            });
+
+            overlay.addEventListener("click", event => {
+                if (event.target === overlay) closePrivacy();
+            });
+
+            document.addEventListener("keydown", event => {
+                if (event.key === "Escape" && !overlay.hidden) closePrivacy();
+            });
+        })();
+    </script>
 </body>
 </html>
