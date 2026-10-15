@@ -110,6 +110,7 @@
         </tr>
     </tbody>
 </table>
+
     </section>
 
     <section class="product-section">
@@ -161,28 +162,6 @@
 <footer>
     <p>&copy; 2026 Carver Streetwear. All rights reserved.</p>
 </footer>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const colourDisplay = document.getElementById("selected-colour");
-    const colourOptions = document.querySelectorAll(
-        'input[name="product-color"]'
-    );
-
-    colourOptions.forEach(function (option) {
-        option.addEventListener("change", function () {
-            if (option.checked) {
-                const colourName = option.value;
-                colourDisplay.textContent =
-                    colourName.charAt(0).toUpperCase() +
-                    colourName.slice(1);
-            }
-        });
-    });
-});
-</script>
-</body>
 
 </body>
 </html>
