@@ -323,19 +323,24 @@ main {
    5. PRODUCT CARDS
 ======================================== */
 
+
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
+
 .product-card {
     min-width: 0;
+    flex: 1 1 240px;
     padding: 0;
     margin: 0;
     border: 1px solid var(--border-color);
     background: var(--white);
 }
+
+
 
 /* Clickable product image */
 

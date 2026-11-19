@@ -1,0 +1,21 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream myfile("C:\\carver-streetwear\\grades.txt");
+    string line;
+    string grades;
+
+    while(getline(myfile, line)) {
+        if (getline(myfile, grades)) {
+     
+        }
+        cout << "line" << endl;
+        cout << "grades" << endl;
+    }
+
+    myfile.close();
+    
+    return 0;
+}
